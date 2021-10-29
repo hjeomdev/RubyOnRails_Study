@@ -116,6 +116,36 @@ end
 #### app/view/post에 생성한 액션과 같은 이름의 erb파일을 만든다
 
 ## Rails Update와 Delete 실습기
-
+### 페이지는 하나하나 작성하기
 
 ## 스케폴딩으로 빠르게 만들기
+기본적인 CRUD를 만들고 시작할 수는 없을까?
+### 스케폴딩 
+```rails g scaffold post content:string title:string```
+``` ruby
+rails g scaffold 모델이름 컬럼1이름:컬럼1타입 컬럼2이름:컬럼2타임
+```
+### 스케폴딩으로 생성되는 DB
+| id | Content(String) | Title(String) |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+### 스케폴딩으로 생성되는 controller
+- index
+- new
+- create
+- edit
+- update
+- destroy
+
+### 스케폴딩으로 생성되는 view
+- index.html.erb
+- new.html.erb
+- show.html.erb
+- edit.html.erb
+- _form.html.erb
+
+### 스케폴딩으로 routes.rb에 생성되는 라인
+- resources :posts
